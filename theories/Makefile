@@ -3,7 +3,7 @@ ROCQFIND?=$(ROCQBIN)rocq find
 ROCQMAKEFILE?=$(ROCQBIN)rocq makefile
 ROCQMAKEOPTIONS?=
 ROCQMAKEFILEOPTIONS?=
-ROCQSOURCES?=$(shell find . -regex ".*/[^.][^/]*[.]v" -not -name All.v)
+ROCQSOURCES?=$(shell find . -regex ".*/[^.][^/]*[.]v")
 
 # Move these options to _CoqProject when requiring rocq-core >= 9.3.
 ROCQPACKAGEOPTIONS?=--rocq-package rocq-stdlib -package rocq-core --legacy-support --description "Rocq standard library"
